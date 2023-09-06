@@ -9,4 +9,4 @@ module Spree::StoreControllerDecorator
   end
 
 end
-# ::Spree::StoreController.prepend Spree::StoreControllerDecorator if ::Spree::StoreController.included_modules.exclude?(Spree::StoreControllerDecorator)
+::Spree::StoreController.prepend Spree::StoreControllerDecorator if ::Spree::StoreController.included_modules.exclude?(Spree::StoreControllerDecorator)
