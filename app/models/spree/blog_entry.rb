@@ -80,7 +80,7 @@ class Spree::BlogEntry < ActiveRecord::Base
 
   def create_permalink
     # self.permalink = title.to_url if permalink.blank?
-    self.permalink = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '') if permalink.blank?
+    self.permalink = title.to_s.parameterize if permalink.blank?
   end
 
   def set_published_at
