@@ -67,14 +67,14 @@
   <div class= "col-6">
     <%= form.field_container :body do %>
       <%= form.label :body %> <span class="required">*</span><br />
-      <%= form.text_area :body, {:cols => 60, :rows => 4, :class => 'form-control', :id => 'blog_entry_body'} %>
+      <%= form.text_area :body, { :cols => 60, :rows => 4, class: "form-control spree-rte" } %>
       <%= form.error_message_on :body %>
     <% end %>
   </div>
   <div class= "col-6">
     <%= form.field_container :summary do %>
       <%= form.label :summary %><br />
-      <%= form.text_area :summary, {:cols => 60, :rows => 4, :class => 'form-control', :id => 'blog_entry_summary'} %>
+      <%= form.text_area :summary, { :cols => 60, :rows => 4, class: "form-control spree-rte" } %>
       <%= form.error_message_on :summary %>
     <% end %>
   </div>
